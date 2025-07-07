@@ -1,0 +1,32 @@
+{
+  "name": "rag-mcp",
+  "description": "Herramientas para interactuar con SQL Server: listar vistas y ejecutar SQL.",
+  "tools": [
+    {
+      "name": "listar_vistas_db",
+      "description": "Lista las vistas disponibles en la base de datos SQL Server.",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": []
+      }
+    },
+    {
+      "name": "ejecutar_sql_directo",
+      "description": "Ejecuta una sentencia tipo T-SQL directamente contra la base de datos SQL Server.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string",
+            "description": "Sentencia SQL que se ejecutará. Ej: 'SELECT * FROM clientes;'"
+          }
+        },
+        "required": ["query"]
+      }
+    }
+  ],
+  "auth": { "type": "none" },
+  "server": { "type": "stdio" },
+  "version": "1.0.0"
+}
