@@ -3,7 +3,7 @@
 Este Servidor trabaja con una api de SQL Server que se encuentra en este repositorio: **[apiConsultaSqlServer](https://github.com/DonJosueSuarez/apiConsultaSqlServer.git)**
 
 # ⚙️ Configuración el archivo {} claude_desktop_config.json
-```python
+```json
 {
   "mcpServers": {
     "databaseMCP": {
